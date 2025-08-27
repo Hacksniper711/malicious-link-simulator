@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اختبار الحمل - HossamXploit</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .loader {
+      border: 6px solid #333;
+      border-top: 6px solid #00ff00;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .status {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>جارٍ تنفيذ الاختبار...</h1>
+  <div class="loader"></div>
+  <div class="status">يرجى عدم إغلاق الصفحة</div>
+
+  <script>
+    let i = 0;
+    while (true) {
+      i++;
+      if (i % 1000000 === 0) {
+        console.log("اختبار الحمل #" + i);
+      }
+    }
+  </script>
+</body>
+</html>
